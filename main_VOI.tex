@@ -1,0 +1,27 @@
+% XeLaTeX document
+\documentclass[aspectratio=169, 11pt]{beamer} % для экранов 16:9 оставить
+
+% \documentclass[11pt]{beamer} % для экранов 4:3 оставить
+
+% Редактируем: конфигурация, личные настройки: имя, название предмета и пр. для титульной страницы и метаданных документа здесь
+\include{config}
+
+
+% настройка метаданных документа
+\institute[\university]{\university \\ \faculty}
+\title[\docname]{VOI}
+\author[\tutorname]{\small Преподаватель: \tutorname}
+\date{\the\year} 
+
+\include{templates/titlepage}
+
+\begin{document}
+
+% Редактируем: всё остальное: вступление, др. этапы, заключение, приложение
+\include{VOI/content_VOI}
+
+
+% Не редактируем: Страница библиографии (формируется автоматически из книжек, указанных в refs.bib и пометок \cite{имя_источника} в тексте)
+\include{templates/bib-page}
+
+\end{document}
